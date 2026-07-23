@@ -1,4 +1,11 @@
 ---
+type: "Data Governance Policy"
+title: "Voluptas survey data retention and deletion"
+description: "Ownership, access, retention, deletion, and incident rules for private survey responses."
+tags:
+  - "voluptas"
+  - "survey"
+  - "privacy"
 okf_version: "0.1"
 ---
 
