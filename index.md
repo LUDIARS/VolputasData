@@ -21,5 +21,4 @@ responses. It is mounted by Voluptas as a Git submodule.
   immutable numeric ID and current GitHub login so login renames do not create a new identity.
 * Survey answers may be sensitive. Do not merge response branches into `main`; grant repository
   access only to authorized reviewers.
-* Deletion requires removing the response branch from the remote and following the organization's
-  retained-history policy.
+* The [retention and deletion policy](POLICY.md) is mandatory for real responses.
