@@ -12,6 +12,10 @@ Volputasのローカル専用モードで利用できる、公開サンプル用
 定義は`surveys/<survey-id>.json`へ、整形済みJSONで保存します。ファイル名と
 アンケート内の`id`は一致させてください。
 
+任意の`category`オブジェクト（`id`・`label`・`order`）で、Volputasの
+サイドバーに表示するグループと順序を指定できます。未指定のアンケートは
+`General`カテゴリにまとめられます。
+
 ## 回答状態
 
 Volputasは`<GitHub名>/responses/<survey-id>.json`の存在を正本として、

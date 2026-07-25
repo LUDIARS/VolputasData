@@ -1,5 +1,10 @@
 {
   "id": "gamer-preference",
+  "category": {
+    "id": "player-profile",
+    "label": "プレイヤープロフィール",
+    "order": 10
+  },
   "title": "ゲーム嗜好診断 — Timmy/Johnny/Spikeタイプ・プレイスタイル診断",
   "description": "MTGのTimmy/Johnny/Spike心理分類 (+Vorthos/Melvin)、Caillois の遊びの4分類、Berneのライフスクリプトによる12次元の「Gamer / Mechanics / Story」診断と、Bartle気質を拡張した15軸のプレイスタイル診断を1本にまとめたアンケートです。好きなジャンルやタイトルもあわせて教えてください。Steamのゲーム記録を連携したい場合は設定画面から連携できます。",
   "questions": [

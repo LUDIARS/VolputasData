@@ -1,5 +1,10 @@
 {
   "id": "play-habits",
+  "category": {
+    "id": "player-profile",
+    "label": "プレイヤープロフィール",
+    "order": 10
+  },
   "title": "ゲームプレイ習慣",
   "description": "普段の遊び方やゲームの選び方を確認する、公開サンプル用のアンケートです。",
   "questions": [

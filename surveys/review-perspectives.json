@@ -1,5 +1,10 @@
 {
   "id": "review-perspectives",
+  "category": {
+    "id": "game-review",
+    "label": "ゲームレビュー",
+    "order": 30
+  },
   "title": "ゲームレビューで重視する観点",
   "description": "ゲームを評価するときに重視する要素を確認する、公開サンプル用のアンケートです。1は重視しない、5は特に重視する、を表します。",
   "questions": [

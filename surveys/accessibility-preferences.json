@@ -1,5 +1,10 @@
 {
   "id": "accessibility-preferences",
+  "category": {
+    "id": "play-environment",
+    "label": "プレイ環境",
+    "order": 20
+  },
   "title": "ゲーム設定とアクセシビリティの好み",
   "description": "個人の健康情報を収集せず、遊びやすい設定や情報提示の好みを確認する公開サンプルです。",
   "questions": [
