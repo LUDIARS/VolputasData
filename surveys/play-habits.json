@@ -1,0 +1,85 @@
+{
+  "id": "play-habits",
+  "title": "ゲームプレイ習慣",
+  "description": "普段の遊び方やゲームの選び方を確認する、公開サンプル用のアンケートです。",
+  "questions": [
+    {
+      "id": "weekly-frequency",
+      "type": "choice",
+      "text": "普段どのくらいの頻度でゲームを遊びますか？",
+      "options": [
+        { "value": "occasional", "label": "月に数回以下" },
+        { "value": "weekends", "label": "週末を中心に遊ぶ" },
+        { "value": "several-days", "label": "週に数日遊ぶ" },
+        { "value": "most-days", "label": "ほぼ毎日遊ぶ" }
+      ]
+    },
+    {
+      "id": "session-length",
+      "type": "choice",
+      "text": "1回のプレイ時間として最も多いものを選んでください。",
+      "options": [
+        { "value": "under-30", "label": "30分未満" },
+        { "value": "30-90", "label": "30〜90分" },
+        { "value": "90-180", "label": "90分〜3時間" },
+        { "value": "over-180", "label": "3時間以上" }
+      ]
+    },
+    {
+      "id": "preferred-play-mode",
+      "type": "choice",
+      "text": "最も好むプレイ形態を選んでください。",
+      "options": [
+        { "value": "solo", "label": "一人で遊ぶ" },
+        { "value": "cooperative", "label": "協力して遊ぶ" },
+        { "value": "competitive", "label": "対戦して遊ぶ" },
+        { "value": "mixed", "label": "内容に応じて選ぶ" }
+      ]
+    },
+    {
+      "id": "discovery-channel",
+      "type": "choice",
+      "text": "新しいゲームを知る主なきっかけは何ですか？",
+      "options": [
+        { "value": "friends", "label": "友人・知人の紹介" },
+        { "value": "storefront", "label": "ストアのおすすめ" },
+        { "value": "creators", "label": "動画・配信・記事" },
+        { "value": "community", "label": "SNS・コミュニティ" }
+      ]
+    },
+    {
+      "id": "completion-style",
+      "type": "choice",
+      "text": "ゲームを進めるときの傾向に最も近いものを選んでください。",
+      "options": [
+        { "value": "main-story", "label": "メイン進行を優先する" },
+        { "value": "side-content", "label": "寄り道も幅広く楽しむ" },
+        { "value": "completionist", "label": "できるだけ完全達成を目指す" },
+        { "value": "open-ended", "label": "目標を決めず自由に遊ぶ" }
+      ]
+    },
+    {
+      "id": "replay-interest",
+      "type": "scale",
+      "text": "気に入ったゲームを繰り返し遊びたい度合いを1〜5で選んでください。",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "experimentation-interest",
+      "type": "scale",
+      "text": "異なるビルドや攻略方法を試したい度合いを1〜5で選んでください。",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "difficulty-preference",
+      "type": "choice",
+      "text": "好みの難易度設計を選んでください。",
+      "options": [
+        { "value": "relaxed", "label": "気軽に進められる" },
+        { "value": "balanced", "label": "適度な挑戦がある" },
+        { "value": "challenging", "label": "高い難度を攻略する" },
+        { "value": "adaptive", "label": "途中で細かく調整できる" }
+      ]
+    }
+  ]
+}

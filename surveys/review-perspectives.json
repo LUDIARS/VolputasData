@@ -1,0 +1,66 @@
+{
+  "id": "review-perspectives",
+  "title": "ゲームレビューで重視する観点",
+  "description": "ゲームを評価するときに重視する要素を確認する、公開サンプル用のアンケートです。1は重視しない、5は特に重視する、を表します。",
+  "questions": [
+    {
+      "id": "mechanics-importance",
+      "type": "scale",
+      "text": "ゲームルールや遊びの仕組みをどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "controls-importance",
+      "type": "scale",
+      "text": "操作の分かりやすさや反応の良さをどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "narrative-importance",
+      "type": "scale",
+      "text": "物語、登場人物、世界観をどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "visual-importance",
+      "type": "scale",
+      "text": "画面表現やアートの一貫性をどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "audio-importance",
+      "type": "scale",
+      "text": "音楽、効果音、音声演出をどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "performance-importance",
+      "type": "scale",
+      "text": "動作の安定性や読み込み時間をどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "accessibility-importance",
+      "type": "scale",
+      "text": "設定の柔軟さや情報の分かりやすさをどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "value-importance",
+      "type": "scale",
+      "text": "価格に対する内容や継続して遊べる価値をどの程度重視しますか？",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "review-style",
+      "type": "choice",
+      "text": "レビューを書くときの方針に最も近いものを選んでください。",
+      "options": [
+        { "value": "concise", "label": "良い点と注意点を短くまとめる" },
+        { "value": "detailed", "label": "項目ごとに詳しく説明する" },
+        { "value": "experience", "label": "自分の体験を中心に伝える" },
+        { "value": "comparison", "label": "似た作品と比較して伝える" }
+      ]
+    }
+  ]
+}
