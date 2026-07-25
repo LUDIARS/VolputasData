@@ -1,0 +1,852 @@
+{
+  "id": "gamer-preference",
+  "title": "ゲーム嗜好診断 — Timmy/Johnny/Spikeタイプ・プレイスタイル診断",
+  "description": "MTGのTimmy/Johnny/Spike心理分類 (+Vorthos/Melvin)、Caillois の遊びの4分類、Berneのライフスクリプトによる12次元の「Gamer / Mechanics / Story」診断と、Bartle気質を拡張した15軸のプレイスタイル診断を1本にまとめたアンケートです。好きなジャンルやタイトルもあわせて教えてください。Steamのゲーム記録を連携したい場合は設定画面から連携できます。",
+  "questions": [
+    {
+      "id": "mtg-timmy-power-fantasy",
+      "type": "choice",
+      "text": "派手な演出や圧倒的なパワーを実感できると、それだけで満足感がある",
+      "dimension": "power_fantasy",
+      "axis": "mtg.timmy",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "mtg-johnny-self-expression",
+      "type": "choice",
+      "text": "自分なりの工夫やコンボを見つけて実践するのが好きだ",
+      "dimension": "self_expression",
+      "axis": "mtg.johnny",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "mtg-spike-winning",
+      "type": "choice",
+      "text": "勝率や結果にこだわり、常に最適な選択をしたい",
+      "dimension": "winning",
+      "axis": "mtg.spike",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "gamer-vorthos-flavor",
+      "type": "choice",
+      "text": "世界観やキャラクターの背景設定を読み込むのが好きだ",
+      "dimension": "flavor_story",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "gamer-melvin-system",
+      "type": "choice",
+      "text": "ゲームのルールや数値バランスがどう設計されているか気になる",
+      "dimension": "system_design",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "mechanics-agon-competition",
+      "type": "choice",
+      "text": "他人と競い合い、実力を試すような場面に燃える",
+      "dimension": "competition",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "mechanics-alea-luck",
+      "type": "choice",
+      "text": "運や確率に左右される展開にワクワクする",
+      "dimension": "luck_chance",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "mechanics-ilinx-thrill",
+      "type": "choice",
+      "text": "スピード感やスリル、感覚が揺さぶられる体験が好きだ",
+      "dimension": "thrill_rush",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "mechanics-mimicry-roleplay",
+      "type": "choice",
+      "text": "キャラクターになりきったり、役割を演じたりするのが楽しい",
+      "dimension": "roleplay",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "story-winner-goal",
+      "type": "choice",
+      "text": "目標を立てて着実に達成していく過程にやりがいを感じる",
+      "dimension": "goal_achievement",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "story-banal-routine",
+      "type": "choice",
+      "text": "決まった日課やルーティンとしてゲームを続けるのが心地よい",
+      "dimension": "daily_routine",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "story-loser-struggle",
+      "type": "choice",
+      "text": "うまくいかない状況が続いても、それ自体をゲームの一部として楽しめる",
+      "dimension": "challenge_struggle",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-achiever",
+      "type": "choice",
+      "text": "実績解除やスコア、進捗バーを埋めることに強いモチベーションを感じる",
+      "axis": "style.achiever",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-explorer",
+      "type": "choice",
+      "text": "隠し要素や未知のエリアを自分で見つけ出すのが楽しい",
+      "axis": "style.explorer",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-socializer",
+      "type": "choice",
+      "text": "友人と一緒に遊んだり交流したりすること自体が目的になる",
+      "axis": "style.socializer",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-competitor",
+      "type": "choice",
+      "text": "ランキングや対人戦で他人と比較されることにやる気が出る",
+      "axis": "style.competitor",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-collector",
+      "type": "choice",
+      "text": "キャラクターやアイテムを揃えてコレクションするのが好きだ",
+      "axis": "style.collector",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-narrative",
+      "type": "choice",
+      "text": "ストーリーや会話、世界観の深さを重視してゲームを選ぶ",
+      "axis": "style.narrative",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-relaxation",
+      "type": "choice",
+      "text": "短時間で気軽に息抜きできるゲームを求めている",
+      "axis": "style.relaxation",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-mastery",
+      "type": "choice",
+      "text": "難しい操作や高難度な内容を練習して上達するのが好きだ",
+      "axis": "style.mastery",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-onboarding-need",
+      "type": "choice",
+      "text": "新しいゲームを始めるとき、丁寧なチュートリアルがないと不安になる",
+      "axis": "style.onboarding_need",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-autonomy",
+      "type": "choice",
+      "text": "説明を読むより自分で触って試行錯誤する方が好きだ",
+      "axis": "style.autonomy",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-routine-tolerance",
+      "type": "choice",
+      "text": "ログインボーナスや期間限定イベントのような日課要素を苦にしない",
+      "axis": "style.routine_tolerance",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "style-monetization-sensitivity",
+      "type": "choice",
+      "text": "課金額やガチャの確率、報酬の差に敏感な方だ",
+      "axis": "style.monetization_sensitivity",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "favorite-genre",
+      "type": "choice",
+      "text": "好きなゲームジャンルを教えてください",
+      "options": [
+        {
+          "value": "roguelike",
+          "label": "ローグライク"
+        },
+        {
+          "value": "gacha",
+          "label": "ガチャ・ソシャゲ"
+        },
+        {
+          "value": "fps",
+          "label": "FPS"
+        },
+        {
+          "value": "rpg",
+          "label": "RPG"
+        },
+        {
+          "value": "puzzle",
+          "label": "パズル"
+        },
+        {
+          "value": "action",
+          "label": "アクション"
+        },
+        {
+          "value": "strategy",
+          "label": "ストラテジー"
+        },
+        {
+          "value": "horror",
+          "label": "ホラー"
+        },
+        {
+          "value": "simulation",
+          "label": "シミュレーション"
+        },
+        {
+          "value": "fighting",
+          "label": "対戦・格闘"
+        },
+        {
+          "value": "other",
+          "label": "その他"
+        }
+      ]
+    },
+    {
+      "id": "favorite-experience",
+      "type": "choice",
+      "text": "ゲームに一番求める体験はどれですか?",
+      "options": [
+        {
+          "value": "excitement",
+          "label": "興奮"
+        },
+        {
+          "value": "tension",
+          "label": "緊張"
+        },
+        {
+          "value": "achievement",
+          "label": "達成感"
+        },
+        {
+          "value": "healing",
+          "label": "癒し"
+        },
+        {
+          "value": "immersion",
+          "label": "没入"
+        },
+        {
+          "value": "social",
+          "label": "交流"
+        },
+        {
+          "value": "collection",
+          "label": "収集"
+        },
+        {
+          "value": "growth",
+          "label": "成長"
+        }
+      ]
+    },
+    {
+      "id": "favorite-titles",
+      "type": "freetext",
+      "text": "好きなゲームタイトルを教えてください(複数可)"
+    },
+    {
+      "id": "play-platform",
+      "type": "choice",
+      "text": "普段どの環境でゲームを遊びますか?",
+      "options": [
+        {
+          "value": "pc",
+          "label": "PC (Steam等)"
+        },
+        {
+          "value": "console",
+          "label": "家庭用ゲーム機"
+        },
+        {
+          "value": "mobile",
+          "label": "スマートフォン"
+        },
+        {
+          "value": "mixed",
+          "label": "複数の環境"
+        },
+        {
+          "value": "other",
+          "label": "その他"
+        }
+      ]
+    }
+  ]
+}
