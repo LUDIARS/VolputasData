@@ -18,7 +18,8 @@ Volputasのローカル専用モードで利用できる、公開サンプル用
 
 ## 回答状態
 
-Volputasは`answers/<GitHub名>/<survey-id>.json`の存在を正本として、
+Volputasは`answers/<Name>/<survey-id>.json`の存在を正本として扱います。
+Nameはデータリポジトリの`git config user.name`から自動設定し、
 アンケートごとに`answered`または`unanswered`を表示します。状態だけを表す
 別ファイルは作りません。
 
