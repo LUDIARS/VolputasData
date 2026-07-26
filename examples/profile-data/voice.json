@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Open Source Kart",
+  "scopeType": "content",
+  "contentName": "Forest Circuit",
+  "sentiment": 1,
+  "comment": "分岐を見つける楽しさがある。終盤の視認性はもう少し高いとうれしい。",
+  "tags": [
+    "探索",
+    "コース設計",
+    "視認性"
+  ],
+  "id": "sample-voice",
+  "createdAt": "2026-07-26T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z"
+}

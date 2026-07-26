@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Open Source Kart",
+  "platform": "PC",
+  "playtimeHours": 48,
+  "completionPercent": 72,
+  "achievementsUnlocked": 18,
+  "achievementsTotal": 30,
+  "selfRatedMastery": 4,
+  "userInfo": "タイムアタックを中心にプレイ。上位コースのショートカットを練習中。",
+  "screenshotFileName": "sample-result.png",
+  "dedication": {
+    "score": 67,
+    "confidence": "high",
+    "signalsUsed": 4
+  },
+  "id": "sample-gameplay",
+  "createdAt": "2026-07-26T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "gameTitle": "Open Source Kart",
+  "videoFileName": "sample-session.mp4",
+  "daysAfterPlay": 1,
+  "sessionLabel": "2回目のタイムアタック",
+  "playContext": "新しいショートカットを試したセッション",
+  "narrativeArc": "試行から成功",
+  "journeyStage": "習熟",
+  "entries": [
+    {
+      "timeSeconds": 42.5,
+      "valence": -1,
+      "arousal": 3,
+      "comment": "進入角度を失敗して悔しい。"
+    },
+    {
+      "timeSeconds": 96.2,
+      "valence": 2,
+      "arousal": 5,
+      "comment": "狙ったラインが通り、自己ベストを更新できた。"
+    }
+  ],
+  "id": "sample-emotion-curve",
+  "createdAt": "2026-07-26T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z"
+}

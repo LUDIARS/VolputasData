@@ -1,2 +1,7 @@
 # Local response files contain Git Author metadata and are not public sample data.
 /answers/*/*.json
+/gameplay/*/*.json
+/voices/*/*.json
+/emotion-curves/*/*.json
+/analysis/*/*.json
+/media/**/*
