@@ -1,0 +1,42 @@
+{
+  "id": "gamer-emotions",
+  "category": {
+    "id": "player-profile",
+    "label": "プレイヤープロフィール",
+    "order": 10
+  },
+  "title": "ゲーム体験の記述 — 感情傾向の分析",
+  "description": "選択式ではなく、実際の体験を自由に書いてもらうアンケートです。書かれた文章から20次元の感情傾向ベクトルを算出し、選択式では出てこない好き嫌いの手触りを分析に反映します。文章の内容そのものは分析以外の用途に使いません。",
+  "questions": [
+    {
+      "id": "emotion-peak-moment",
+      "type": "freetext",
+      "text": "これまで遊んだゲームで、一番心が動いた瞬間はどんな場面でしたか。そのときどう感じたかも一緒に書いてください",
+      "weight": 3
+    },
+    {
+      "id": "emotion-quit-reason",
+      "type": "freetext",
+      "text": "途中でやめてしまったゲームについて、やめた理由と、やめたときの気持ちを教えてください",
+      "weight": 3
+    },
+    {
+      "id": "emotion-frustration",
+      "type": "freetext",
+      "text": "ゲームで悔しかった・腹が立った体験を、そのときの気持ちごと教えてください",
+      "weight": 3
+    },
+    {
+      "id": "emotion-recommend",
+      "type": "freetext",
+      "text": "誰かに勧めたくなったゲームについて、何をどう伝えたくなったか教えてください",
+      "weight": 2
+    },
+    {
+      "id": "emotion-spending",
+      "type": "freetext",
+      "text": "課金や購入を決めた瞬間の気持ちを教えてください。課金したことがなければ、なぜしないのかを教えてください",
+      "weight": 2
+    }
+  ]
+}

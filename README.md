@@ -7,10 +7,17 @@ Volputas本体とは独立したリポジトリです。必要な場所へ明示
 
 ## アンケート
 
-- `gamer-preference` — ゲーム嗜好とプレイスタイル
+- `gamer-preference` — ゲーム嗜好とプレイスタイル (12次元 + 15軸)
+- `gamer-subtypes` — ゲーマータイプのサブタイプ判定 (5主タイプ×4 = 20タイプ)
+- `gamer-emotions` — 体験の自由記述から感情傾向 (20次元) を取る
 - `play-habits` — 普段のゲームプレイ習慣
 - `accessibility-preferences` — ゲーム設定とアクセシビリティの好み
 - `review-perspectives` — ゲームレビューで重視する観点
+
+`gamer-preference`・`gamer-subtypes`・`gamer-emotions`は測るものごとに分けた3本
+セットです。1本にまとめると80問近くなり、主タイプだけ知りたい回答者に
+サブタイプ20問を強制することになるため分割しています。主タイプだけなら
+`gamer-preference`だけで完結します。
 
 定義は`surveys/<survey-id>.json`へ、整形済みJSONで保存します。ファイル名と
 アンケート内の`id`は一致させてください。
@@ -18,6 +25,15 @@ Volputas本体とは独立したリポジトリです。必要な場所へ明示
 任意の`category`オブジェクト（`id`・`label`・`order`）で、Volputasの
 サイドバーに表示するグループと順序を指定できます。未指定のアンケートは
 `General`カテゴリにまとめられます。
+
+設問には、それが何を測るかを表す任意のタグを付けられます。付けた設問だけが
+対応する分析へ寄与し、付いていない設問は回答として保存されるだけです。
+
+- `dimension` — 12次元 (Gamer / Mechanics / Story) 分析
+- `axis` — 15軸プレイスタイル分析
+- `subtype` — `<主タイプ>.<サブタイプ>` 形式の20サブタイプ判定
+- `scoring` — 選択肢の値ごとの -1..1 スコア（`dimension`・`axis`・`subtype`共通）
+- `weight` — `freetext`設問が感情傾向ベクトルへ寄与する重み
 
 ## 回答状態
 

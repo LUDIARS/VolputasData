@@ -1,0 +1,612 @@
+{
+  "id": "gamer-subtypes",
+  "category": {
+    "id": "player-profile",
+    "label": "プレイヤープロフィール",
+    "order": 10
+  },
+  "title": "ゲーマータイプ詳細診断 — サブタイプ判定",
+  "description": "MTGの心理分類 (Timmy/Johnny/Spike/Vorthos/Melvin) それぞれの4サブタイプ、計20タイプを判定するアンケートです。「ゲーム嗜好診断」で判定された主タイプの中で、どの傾向が強いかを絞り込みます。先に「ゲーム嗜好診断」に回答しておくと結果が出ます。",
+  "questions": [
+    {
+      "id": "subtype-timmy-power",
+      "type": "choice",
+      "text": "とにかく大きい・強い・派手なものを実際に使えると、それだけで満足できる",
+      "subtype": "timmy.power",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-timmy-social",
+      "type": "choice",
+      "text": "その場が盛り上がったかどうかで、そのゲームの良し悪しを判断している",
+      "subtype": "timmy.social",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-timmy-diversity",
+      "type": "choice",
+      "text": "毎回違う展開や違う戦い方を試したい。同じ流れの繰り返しはすぐ飽きる",
+      "subtype": "timmy.diversity",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-timmy-adrenaline",
+      "type": "choice",
+      "text": "安全に勝つより、一発逆転や大博打の緊張感を味わいたい",
+      "subtype": "timmy.adrenaline",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-johnny-combo",
+      "type": "choice",
+      "text": "ばらばらの要素を組み合わせて一つの大きな一手を成立させるのが一番楽しい",
+      "subtype": "johnny.combo",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-johnny-offbeat",
+      "type": "choice",
+      "text": "誰も使わない要素や弱いとされる要素を、あえて主役にしたくなる",
+      "subtype": "johnny.offbeat",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-johnny-uber",
+      "type": "choice",
+      "text": "自分で決めた縛りや自分ルールを課して遊ぶことがある",
+      "subtype": "johnny.uber",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-johnny-eliminator",
+      "type": "choice",
+      "text": "勝つなら自分が狙った形で、相手に何もさせずに勝ち切りたい",
+      "subtype": "johnny.eliminator",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-spike-innovator",
+      "type": "choice",
+      "text": "誰も気づいていない戦術を自分で発見して、それで勝ちたい",
+      "subtype": "spike.innovator",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-spike-tuner",
+      "type": "choice",
+      "text": "既にある強い型を細部まで調整して仕上げていく作業が好きだ",
+      "subtype": "spike.tuner",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-spike-analyst",
+      "type": "choice",
+      "text": "確率や統計、他人の記録を調べて最適解を突き止めたい",
+      "subtype": "spike.analyst",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-spike-nut",
+      "type": "choice",
+      "text": "勝てるなら、最強とされている型をそのまま使うことに抵抗はない",
+      "subtype": "spike.nut",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-vorthos-creative",
+      "type": "choice",
+      "text": "絵柄やビジュアル、音楽の雰囲気だけでそのゲームを選ぶことがある",
+      "subtype": "vorthos.creative",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-vorthos-collector",
+      "type": "choice",
+      "text": "作品世界にまつわる資料やグッズを手元に置いておきたい",
+      "subtype": "vorthos.collector",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-vorthos-loremaster",
+      "type": "choice",
+      "text": "作品の歴史や年表、細かい設定まで把握しておきたい",
+      "subtype": "vorthos.loremaster",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-vorthos-cosplayer",
+      "type": "choice",
+      "text": "キャラクターの姿や口調、振る舞いを自分でも再現してみたくなる",
+      "subtype": "vorthos.cosplayer",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-melvin-designer",
+      "type": "choice",
+      "text": "「自分ならこう作る」とルールや仕組みを設計し直したくなる",
+      "subtype": "melvin.designer",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-melvin-optimizer",
+      "type": "choice",
+      "text": "無駄がなく噛み合った仕組みを見ると、それ自体が気持ちいい",
+      "subtype": "melvin.optimizer",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-melvin-theorist",
+      "type": "choice",
+      "text": "そのゲームの仕組みを一般化して、理屈として説明したくなる",
+      "subtype": "melvin.theorist",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    },
+    {
+      "id": "subtype-melvin-completionist",
+      "type": "choice",
+      "text": "システムを隅々まで理解し尽くさないと落ち着かない",
+      "subtype": "melvin.completionist",
+      "options": [
+        {
+          "value": "strongly_agree",
+          "label": "とてもそう思う"
+        },
+        {
+          "value": "agree",
+          "label": "ややそう思う"
+        },
+        {
+          "value": "disagree",
+          "label": "あまりそう思わない"
+        },
+        {
+          "value": "strongly_disagree",
+          "label": "全くそう思わない"
+        }
+      ],
+      "scoring": {
+        "strongly_agree": 0.9,
+        "agree": 0.3,
+        "disagree": -0.3,
+        "strongly_disagree": -0.9
+      }
+    }
+  ]
+}
