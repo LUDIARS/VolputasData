@@ -1,0 +1,77 @@
+{
+  "id": "accessibility-preferences",
+  "category": {
+    "id": "play-environment",
+    "label": "プレイ環境",
+    "order": 20
+  },
+  "title": "ゲーム設定とアクセシビリティの好み",
+  "description": "個人の健康情報を収集せず、遊びやすい設定や情報提示の好みを確認する公開サンプルです。",
+  "questions": [
+    {
+      "id": "subtitle-preference",
+      "type": "choice",
+      "text": "字幕の初期設定として好ましいものを選んでください。",
+      "options": [
+        { "value": "on", "label": "最初から表示する" },
+        { "value": "off", "label": "最初は表示しない" },
+        { "value": "prompt", "label": "開始時に選択する" }
+      ]
+    },
+    {
+      "id": "text-size-preference",
+      "type": "choice",
+      "text": "ゲーム内テキストの表示として好ましいものを選んでください。",
+      "options": [
+        { "value": "compact", "label": "情報量を優先した小さめ表示" },
+        { "value": "standard", "label": "標準表示" },
+        { "value": "large", "label": "読みやすい大きめ表示" },
+        { "value": "adjustable", "label": "細かく調整できる表示" }
+      ]
+    },
+    {
+      "id": "control-remapping",
+      "type": "scale",
+      "text": "操作キーやボタンを変更できることの重要度を1〜5で選んでください。",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "color-independent-cues",
+      "type": "scale",
+      "text": "色だけに頼らず形や記号でも情報を区別できることの重要度を1〜5で選んでください。",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "motion-options",
+      "type": "choice",
+      "text": "画面揺れやモーション表現の設定として好ましいものを選んでください。",
+      "options": [
+        { "value": "standard", "label": "標準演出を使う" },
+        { "value": "reduced", "label": "演出を弱められる" },
+        { "value": "off", "label": "個別に無効化できる" }
+      ]
+    },
+    {
+      "id": "audio-visual-cues",
+      "type": "scale",
+      "text": "重要な音を画面表示でも確認できることの重要度を1〜5で選んでください。",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "difficulty-options",
+      "type": "scale",
+      "text": "戦闘・探索・時間制限などを個別に調整できることの重要度を1〜5で選んでください。",
+      "options": { "min": 1, "max": 5 }
+    },
+    {
+      "id": "onboarding-pace",
+      "type": "choice",
+      "text": "チュートリアルの進み方として好ましいものを選んでください。",
+      "options": [
+        { "value": "quick", "label": "短く要点だけ確認する" },
+        { "value": "guided", "label": "順番に案内してほしい" },
+        { "value": "self-paced", "label": "必要な項目を自分で選ぶ" }
+      ]
+    }
+  ]
+}

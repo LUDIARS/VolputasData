@@ -1,0 +1,15 @@
+# Local response files contain Git Author metadata and are not public sample data.
+/answers/*/*.json
+/gameplay/*/*.json
+/voices/*/*.json
+/emotion-curves/*/*.json
+/analysis/*/*.json
+/media/**/*
+
+# Legacy local-survey output remains local while Volputas migrates to JSON storage.
+/responses/github-*/*.md
+/surveys/*.md
+
+# Local writer state and temporary files are never repository data.
+.voluptas-survey.lock
+*.tmp
